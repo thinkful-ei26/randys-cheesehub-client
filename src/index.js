@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import CheeseList from '../src/components/cheese-list';
 import * as serviceWorker from './serviceWorker';
+import {Provider} from 'react-redux';
+import store from './store/store';
 
-ReactDOM.render(<CheeseList cheeses={["Bath Blue",
-"Barkham Blue",
-"Buxton Blue"]}/>, 
+ReactDOM.render(
+  <Provider store={store}>
+    <CheeseList />
+  </Provider>,
   document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
