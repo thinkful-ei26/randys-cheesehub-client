@@ -1,8 +1,8 @@
-// import React from 'react';
-// import {combineReducers} from 'react-redux';
-// import cheesesReducer from './cheesesReducer';
+import {combineReducers} from 'redux';
+import cheesesReducer from './cheesesReducer';
 
-// const rootReducer = combineReducers({
-//   cheesesReducer: cheesesReducer
-// })
+const rootReducer = combineReducers({
+  cheeses: cheesesReducer
+})
 
+export default rootReducer;
